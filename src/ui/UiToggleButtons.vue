@@ -1,39 +1,39 @@
 <script setup lang="ts">
-import { ref, watch, defineProps, defineEmits } from 'vue'
-import UiButton from '@/ui/UiButton.vue'
+import { ref, watch, defineProps, defineEmits } from "vue";
+import UiButton from "@/ui/UiButton.vue";
 
 interface ToggleOption {
-  id: string
-  label: string
-  price?: number
+  id: string;
+  label: string;
+  price?: number;
 }
 
 const props = defineProps<{
-  options: ToggleOption[]
-  modelValue: string[]
-}>()
+  options: ToggleOption[];
+  modelValue: string[];
+}>();
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string[]): void
-}>()
+  (e: "update:modelValue", value: string[]): void;
+}>();
 
-const selected = ref<string[]>([...props.modelValue])
+const selected = ref<string[]>([...props.modelValue]);
 
 watch(
   () => props.modelValue,
   (newVal) => {
-    selected.value = [...newVal]
+    selected.value = [...newVal];
   },
-)
+);
 
 const onToggle = (id: string) => {
   if (selected.value.includes(id)) {
-    selected.value = selected.value.filter((item) => item !== id)
+    selected.value = selected.value.filter((item) => item !== id);
   } else {
-    selected.value.push(id)
+    selected.value.push(id);
   }
-  emit('update:modelValue', selected.value)
-}
+  emit("update:modelValue", selected.value);
+};
 </script>
 
 <template>
@@ -44,7 +44,11 @@ const onToggle = (id: string) => {
       type="button"
       fontSize="s"
       :fontWeight="selected.includes(option.id) ? 'bold' : 'normal'"
-      :class="selected.includes(option.id) ? 'btn-secondary text-white' : 'text-primary border'"
+      :class="
+        selected.includes(option.id)
+          ? 'btn-secondary text-white'
+          : 'text-primary border'
+      "
       @click="onToggle(option.id)"
     >
       <span>{{ option.label }}</span>

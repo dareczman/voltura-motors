@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import InfoBanner from '@/compontents/InfoBanner.vue'
-import CarCatalog from '@/compontents/CarCatalog/CarCatalog.vue'
-import PromoBanner from '@/compontents/PromoBanner.vue'
-import CarsFaq from '@/compontents/CarsFaq/CarsFaq.vue'
-import BottomBanner from '@/compontents/BottomBanner.vue'
+import InfoBanner from "@/compontents/InfoBanner.vue";
+import CarCatalog from "@/compontents/CarCatalog/CarCatalog.vue";
+import PromoBanner from "@/compontents/PromoBanner.vue";
+import CarsFaq from "@/compontents/CarsFaq/CarsFaq.vue";
+import BottomBanner from "@/compontents/BottomBanner.vue";
 </script>
 
 <template>

@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
-import UiButton from '@/ui/UiButton.vue'
+import { defineProps, defineEmits } from "vue";
+import UiButton from "@/ui/UiButton.vue";
 
 interface BaseOption {
-  id: string
-  label: string
+  id: string;
+  label: string;
 }
 
 defineProps<{
-  options: BaseOption[]
-  modelValue: string
-}>()
+  options: BaseOption[];
+  modelValue: string;
+}>();
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void
-}>()
+  (e: "update:modelValue", value: string): void;
+}>();
 
-const onSelect = (id: string) => emit('update:modelValue', id)
+const onSelect = (id: string) => emit("update:modelValue", id);
 </script>
 
 <template>
@@ -27,7 +27,11 @@ const onSelect = (id: string) => emit('update:modelValue', id)
       type="button"
       fontSize="s"
       :fontWeight="modelValue === option.id ? 'bold' : 'normal'"
-      :class="modelValue === option.id ? 'btn-secondary text-white' : 'text-primary border'"
+      :class="
+        modelValue === option.id
+          ? 'btn-secondary text-white'
+          : 'text-primary border'
+      "
       @click="onSelect(option.id)"
     >
       {{ option.label }}

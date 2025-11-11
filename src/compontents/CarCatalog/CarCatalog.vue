@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CarFilters from '@/compontents/CarCatalog/CarFilters.vue'
-import CarList from '@/compontents/CarCatalog/CarList.vue'
+import CarFilters from "@/compontents/CarCatalog/CarFilters.vue";
+import CarList from "@/compontents/CarCatalog/CarList.vue";
 </script>
 
 <template>
