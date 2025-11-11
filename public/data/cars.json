@@ -1,0 +1,173 @@
+[
+  {
+    "id": "voltura-zx-2025",
+    "name": "Voltura ZX 2025",
+    "price": 100999,
+    "type": "sedan",
+    "range": 400,
+    "drive": "AWD",
+    "image": "/img/cars/voltura-zx-2025/1.png",
+    "gallery": [
+      "/img/cars/voltura-zx-2025/1.png",
+      "/img/cars/thumbnail-1.jpg",
+      "/img/cars/thumbnail-2.jpg",
+      "/img/cars/thumbnail-3.jpg"
+    ],
+    "defaultVersion": "basic",
+    "versions": [
+      {
+        "id": "basic",
+        "label": "Podstawowa",
+        "maxSpeed": 210,
+        "acceleration": 5.8,
+        "charging": "120 kW DC",
+        "trunkCapacity": 520,
+        "warranty": "5 lat"
+      },
+      {
+        "id": "sport",
+        "label": "Sport",
+        "price": 6000,
+        "maxSpeed": 220,
+        "acceleration": 4.8,
+        "charging": "152 kW DC",
+        "trunkCapacity": 520,
+        "warranty": "5 lat"
+      },
+      {
+        "id": "performance",
+        "label": "Performance",
+        "price": 8649,
+        "maxSpeed": 240,
+        "acceleration": 3.8,
+        "charging": "189 kW DC",
+        "trunkCapacity": 550,
+        "warranty": "10 lat"
+      }
+    ],
+    "defaultColor": "green",
+    "colors": [
+      { "id": "green", "label": "Zielony", "hex": "#0C4E3C" },
+      { "id": "white", "label": "Biały", "hex": "#FFFFFF", "price": 1000 },
+      { "id": "black", "label": "Czarny", "hex": "#000000", "price": 1500 }
+    ],
+    "addons": [
+      { "id": "winter-tires", "label": "Koła zimowe", "price": 2500 },
+      { "id": "accessories", "label": "Akcesoria", "price": 1560 }
+    ]
+  },
+  {
+    "id": "voltura-px-2025",
+    "name": "Voltura PX 2025",
+    "price": 120999,
+    "type": "SUV",
+    "range": 500,
+    "drive": "AWD",
+    "image": "/img/cars/voltura-px-2025/1.png",
+    "gallery": [
+      "/img/cars/voltura-px-2025/1.png",
+      "/img/cars/thumbnail-1.jpg",
+      "/img/cars/thumbnail-2.jpg",
+      "/img/cars/thumbnail-3.jpg"
+    ],
+    "defaultVersion": "basic",
+    "versions": [
+      {
+        "id": "basic",
+        "label": "Podstawowa",
+        "maxSpeed": 220,
+        "acceleration": 5.5,
+        "charging": "150 kW DC",
+        "trunkCapacity": 580,
+        "warranty": "5 lat"
+      },
+      {
+        "id": "sport",
+        "label": "Sport",
+        "price": 6000,
+        "maxSpeed": 240,
+        "acceleration": 4.5,
+        "charging": "150 kW DC",
+        "trunkCapacity": 580,
+        "warranty": "6 lat"
+      },
+      {
+        "id": "performance",
+        "label": "Performance",
+        "price": 8649,
+        "maxSpeed": 280,
+        "acceleration": 2.5,
+        "charging": "150 kW DC",
+        "trunkCapacity": 580,
+        "warranty": "5 lat"
+      }
+    ],
+    "defaultColor": "green",
+    "colors": [
+      { "id": "green", "label": "Zielony", "hex": "#0C4E3C" },
+      { "id": "white", "label": "Biały", "hex": "#FFFFFF", "price": 1000 },
+      { "id": "black", "label": "Czarny", "hex": "#000000", "price": 1500 }
+    ],
+    "addons": [
+      { "id": "winter-tires", "label": "Koła zimowe", "price": 2500 },
+      { "id": "accessories", "label": "Akcesoria", "price": 1560 }
+    ]
+  },
+  {
+    "id": "voltura-sx-2025",
+    "name": "Voltura SX 2025",
+    "price": 99999,
+    "type": "SUV",
+    "range": 300,
+    "drive": "AWD",
+    "image": "/img/cars/voltura-sx-2025/1.png",
+    "gallery": [
+      "/img/cars/voltura-sx-2025/1.png",
+      "/img/cars/thumbnail-1.jpg",
+      "/img/cars/thumbnail-2.jpg",
+      "/img/cars/thumbnail-3.jpg"
+    ],
+    "defaultVersion": "basic",
+    "versions": [
+      {
+        "id": "basic",
+        "label": "Podstawowa",
+        "maxSpeed": 190,
+        "acceleration": 6.5,
+        "charging": "100 kW DC",
+        "trunkCapacity": 480,
+        "warranty": "5 lat"
+      },
+      {
+        "id": "sport",
+        "label": "Sport",
+        "price": 6000,
+        "maxSpeed": 220,
+        "acceleration": 5.5,
+        "charging": "100 kW DC",
+        "trunkCapacity": 480,
+        "warranty": "5 lat"
+      },
+      {
+        "id": "performance",
+        "label": "Performance",
+        "price": 8649,
+        "maxSpeed": 250,
+        "acceleration": 4.5,
+        "charging": "100 kW DC",
+        "trunkCapacity": 480,
+        "warranty": "5 lat"
+      }
+    ],
+    "defaultColor": "green",
+    "colors": [
+      { "id": "green", "label": "Zielony", "hex": "#0C4E3C" },
+      { "id": "white", "label": "Biały", "hex": "#FFFFFF", "price": 1000 },
+      { "id": "black", "label": "Czarny", "hex": "#000000", "price": 1500 }
+    ],
+    "addons": [
+      { "id": "winter-tires", "label": "Koła zimowe", "price": 2500 },
+      { "id": "accessories", "label": "Akcesoria", "price": 1560 }
+    ]
+  }
+]
