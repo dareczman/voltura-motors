@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useModal } from '@/composables/useModal'
-import UiButton from '@/ui/UiButton.vue'
-const { isOpen, component, props, close } = useModal()
+import { useModal } from "@/composables/useModal";
+import UiButton from "@/ui/UiButton.vue";
+const { isOpen, component, props, close } = useModal();
 </script>
 
 <template>
@@ -15,7 +15,9 @@ const { isOpen, component, props, close } = useModal()
         <div class="modal-dialog modal-xl modal-dialog-centered">
           <div class="modal-content shadow position-relative">
             <div class="modal-header">
-              <p class="text-primary fw-bold fs-md">{{ props?.modalTitle || '' }}</p>
+              <p class="text-primary fw-bold fs-md">
+                {{ props?.modalTitle || "" }}
+              </p>
               <button class="btn-close" @click="close" />
             </div>
 
@@ -24,12 +26,16 @@ const { isOpen, component, props, close } = useModal()
             </div>
 
             <div class="modal-footer">
-              <UiButton class="text-primary border border-light-grey" @click="close"
+              <UiButton
+                class="text-primary border border-light-grey"
+                @click="close"
                 >Anuluj</UiButton
               >
-              <UiButton class="text-white bg-secondary" @click="props?.onSubmit?.()">{{
-                props?.submitButtonText || 'Zaakceptuj'
-              }}</UiButton>
+              <UiButton
+                class="text-white bg-secondary"
+                @click="props?.onSubmit?.()"
+                >{{ props?.submitButtonText || "Zaakceptuj" }}</UiButton
+              >
             </div>
           </div>
         </div>

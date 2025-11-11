@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
+import { defineProps, defineEmits } from "vue";
 
 interface BaseOption {
-  id: string
-  label: string
-  hex: string
+  id: string;
+  label: string;
+  hex: string;
 }
 
 defineProps<{
-  options: BaseOption[]
-  modelValue: string
-}>()
+  options: BaseOption[];
+  modelValue: string;
+}>();
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void
-}>()
+  (e: "update:modelValue", value: string): void;
+}>();
 
-const onSelect = (id: string) => emit('update:modelValue', id)
+const onSelect = (id: string) => emit("update:modelValue", id);
 </script>
 
 <template>

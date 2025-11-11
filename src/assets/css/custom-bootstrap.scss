@@ -1,18 +1,18 @@
-$primary: #0B1E40;
-$secondary: #123C82;
-$third: #28483B;
-$body-bg: #F7F9FC;
-$basic-txt-color: #1F2937;
-$light-txt-color: #6B7280;
-$light-grey: #E5E7EB;
+$primary: #0b1e40;
+$secondary: #123c82;
+$third: #28483b;
+$body-bg: #f7f9fc;
+$basic-txt-color: #1f2937;
+$light-txt-color: #6b7280;
+$light-grey: #e5e7eb;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "third": $third,
-  'basic-txt-color': $basic-txt-color,
-  'light-txt-color': $light-txt-color,
-  'light-grey': $light-grey,
+  "basic-txt-color": $basic-txt-color,
+  "light-txt-color": $light-txt-color,
+  "light-grey": $light-grey,
 );
 
 $font-sizes: (
@@ -28,12 +28,12 @@ $font-sizes: (
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .75,
+  1: $spacer * 0.25,
+  2: $spacer * 0.75,
   3: $spacer,
   4: $spacer * 1.75,
   5: $spacer * 2.5,
-  6: $spacer * 3
+  6: $spacer * 3,
 );
 
 $modal-content-bg: #ffffff;
