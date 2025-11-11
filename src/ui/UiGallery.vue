@@ -55,7 +55,7 @@ const swapImage = (image: string) => {
           :key="mainImage"
           :src="getBaseUrl() + mainImage"
           alt="Zdjęcie samochodu"
-          class="img-fluid w-100 h-100 position-absolute top-0 start-0 cursor-pointer"
+          class="img-fluid md-w-100 md-h-100 md-position-absolute md-top-0 start-0 cursor-pointer"
         />
       </Transition>
     </div>
@@ -88,11 +88,17 @@ const swapImage = (image: string) => {
 
 @media (min-width: 992px) {
   .main-image-wrapper {
-    height: 400px;
+    height: 300px;
   }
 
   .thumbnail {
     width: 195px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-image-wrapper {
+    height: 400px;
   }
 }
 </style>
