@@ -1,48 +1,53 @@
-# voltura-motors
+# 🚗 Voltura Configurator
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplikacja webowa stworzona w **Vue 3 + TypeScript + Vite**, służąca jako interaktywny konfigurator samochodów marki Voltura.
+Użytkownik może wybierać wersję, kolor, dodatki oraz zobaczyć podsumowanie ceny w czasie rzeczywistym.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🌐 Podgląd online
 
-## Recommended Browser Setup
+Aplikacja jest hostowana na **GitHub Pages**:  
+👉 [https://dareczman.github.io/voltura-motors/](https://dareczman.github.io/voltura-motors/)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
+## ⚙️ Technologie
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- ⚡ **Vue 3**
+- 🧩 **TypeScript**
+- 🎨 **Bootstrap 5 + SCSS**
+- 🏗️ **Vite**
+- 🗂️ **Pinia** – zarządzanie stanem
+- 🧠 **Composable API** – logika reużywalna (np. modale, konfiguracja)
+- 🚀 **GitHub Actions** – automatyczne wdrożenie na GitHub Pages
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Instalacja i uruchomienie lokalne
 
-## Project Setup
+1. **Sklonuj repozytorium**
+   ```bash
+   git clone https://github.com/dareczman/voltura-motors.git
+   cd voltura-motors
+   ```
+   
+2. **Zainstaluj zależności**
+    ```bash
+   npm install
+    ```
+   
+3. **Uruchom lokalny serwer deweloperski**
+    ```bash
+   npm run dev
+    ```
 
-```sh
-npm install
-```
+4. **Uruchom lokalny serwer deweloperski**
+    ```bash
+   npm run build
+    ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+5. **Uruchom lokalny serwer deweloperski**
+    ```bash
+   npm run preview
+    ```
